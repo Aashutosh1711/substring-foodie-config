@@ -4,5 +4,5 @@ server:
 info:
   app:
     name: "Food Service - DV"
-    description: "This is api gateway for common entry point"
+    description: "This is api gateway for common entry point..Git version"
     version: "1.0 Under Development"
