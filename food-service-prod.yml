@@ -1,0 +1,8 @@
+server:
+  port: 9098
+
+info:
+  app:
+    name: "Food Service"
+    description: "This is api gateway for common entry point.config Server"
+    version: "1.0 Production"

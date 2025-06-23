@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: food-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/jb2404
+    username: root
+    password: 12345618
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+
+    driver-class-name: com.mysql.cj.jdbc.Driver;
+#Kuch der ke liye bass
+#server:
+#  port: 9093
+
+#Eureka Configuration
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    instance:
+      hostname: localhost
+#  Ye actuator lagane ke Badd Add kiye hain
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
+
+
